@@ -1,0 +1,60 @@
+
+::-webkit-scrollbar-thumb {
+    height: 100vh;
+    width: 20px;
+    background-color: gray;
+}
+ 
+body {
+    background-image: url("/assets/hatterkep.png");
+    font: normal 16px 'consolas';
+    
+}
+
+large {
+    color: #ff0099;   
+}
+
+h2 {
+    text-align: center;
+}
+.container {
+    padding: auto;
+}
+.navbar {
+    background-color: #333333;
+    margin:auto;
+
+}
+.navbar a {
+    color: #ff0099;
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration:16px #ff0099 underline;
+    padding: 5px;
+    margin : auto ;
+}
+.navbar img {
+    float: left;
+}
+
+
+.container {
+    border:2px #333333 solid;
+    background-color: #333333;
+    padding-bottom: 30px;
+}
+
+.vonal {
+    border-top: 2px dashed black;
+    width: 40px ;
+}
+
+p {
+    font-family: 'Roboto' ;
+    font-style:normal ;
+}
+ p2 {
+     font-size: small;
+ }
