@@ -1,0 +1,53 @@
+Nézzük meg a virtuális gépünk CPU-inak számát VMware Player-ben.
+kép
+
+Ellenõrizzük, hogy Linux szerver szinten milyen CPU információkat kapunk! Melyik állomány tartalmát kell kiíratni?
+
+       cat /proc/cpuinfo
+       kép
+       
+
+Nézzük meg a boot-olás folyamán a Linux szerverünk milyen hálózati kártyákat lát!
+dmesg | grep NIC
+kép
+
+
+
+Hogy kérdezhetjük le a szerverünk IP címét?
+ifconfig
+kép
+
+
+Listázzuk ki milyen listener folyamatok élnek a rendszerünkben.
+netstat -tupnl
+kép
+
+
+Listázzuk ki a hálózati kapcsolatokat.
+netstat -tupn
+kép
+
+
+Milyen módszerekkel lehet megnézni a hálózati kártya forgalmi adatait.
+ifconfig ens32
+kép
+
+
+Milyen IO forgalom van a /dev/sda disk-en? Milyen parancsokkal lehet ezt megvizsgálni?
+dstat -D sda
+kép
+
+iostat /dev/sda
+kép
+
+
+Swap nélkül lehet-e és ha igen szabad-e Linux szervert indítani?
+nem ajánlott
+
+Mit lehet tenni egy disk túl van terhelve?
+iotop -o paranccsal megvizsgálni melyik folyamat okozza a túlterheltséget 
+ki kell léõni a kill -9 paranccsal
+majd sync paranccsal szinkronizálni a félbemaradt irási, olvasási mûveletet
+
+
+
